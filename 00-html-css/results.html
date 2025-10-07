@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevJobs - Resultados de búsqueda</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./results.css" />
+
+
+</head>
+
+<body>
+    <header>
+        <h1>DevJobs</h1>
+
+        <nav>
+            <a href="">Buscar</a>
+            <a href="">Empleos</a>
+            <a href="">Empresas</a>
+            <a href="">Salarios</a>
+        </nav>
+
+        <div>
+            <a href="">Subir CV</a>
+            <button class="profile-button">
+                <img src="perfil.jpg" alt="Perfil" />
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section>
+
+            <h1>Encuentra tu próximo trabajo</h1>
+
+            <p>Explora miles de oportunidades en el sector tecnológico.</p>
+
+            <form class="search-form" role="search">
+                <div class="search-form__input-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="search-form__icon">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                        <path d="M21 21l-6 -6" />
+                    </svg>
+                    <input required type="text" placeholder="Buscar empleos por título, habilidad o empresa">
+                    <button type="submit" class="job-result__apply-button">Buscar</button>
+                </div>
+
+                <fieldset class="filter-group">
+                    <legend class="visually-hidden">Filtros de búsqueda</legend>
+
+                    <details class="filter-dropdown">
+                        <summary>Tecnología</summary>
+                        <ul class="filter-options">
+                            <li><label><input type="checkbox" name="tech" value="js"> JavaScript</label></li>
+                            <li><label><input type="checkbox" name="tech" value="react"> React</label></li>
+                            <li><label><input type="checkbox" name="tech" value="node"> Node.js</label></li>
+                        </ul>
+                    </details>
+
+                    <details class="filter-dropdown">
+                        <summary>Ubicación</summary>
+                        <ul class="filter-options">
+                            <li><label><input type="checkbox" name="location" value="remoto"> Remoto</label></li>
+                            <li><label><input type="checkbox" name="location" value="presencial"> Presencial</label>
+                            </li>
+                            <li><label><input type="checkbox" name="location" value="hibrido"> Híbrido</label></li>
+                        </ul>
+                    </details>
+
+                    <details class="filter-dropdown">
+                        <summary>Tipo de contrato</summary>
+                        <ul class="filter-options">
+                            <li><label><input type="checkbox" name="contract" value="tiempo-completo"> Tiempo
+                                    completo</label></li>
+                            <li><label><input type="checkbox" name="contract" value="medio-tiempo"> Medio tiempo</label>
+                            </li>
+                            <li><label><input type="checkbox" name="contract" value="freelance"> Freelance</label></li>
+                        </ul>
+                    </details>
+
+                    <details class="filter-dropdown">
+                        <summary>Nivel de experiencia</summary>
+                        <ul class="filter-options">
+                            <li><label><input type="checkbox" name="experience" value="junior"> Junior</label></li>
+                            <li><label><input type="checkbox" name="experience" value="semi-senior"> Semi-Senior</label>
+                            </li>
+                            <li><label><input type="checkbox" name="experience" value="senior"> Senior</label></li>
+                        </ul>
+                    </details>
+                </fieldset>
+            </form>
+
+        </section>
+
+        <section>
+
+            <header>
+                <h2>Resultados de búsqueda</h2>
+            </header>
+
+            <footer>
+                <section class="job-resultt">
+
+                    <article class="job-result">
+                        <div class="job-result__content">
+                            <header class="job-result__header">
+                                <h2 class="job-result__title">Ingeniero de software</h2>
+                                <p class="job-result__meta">
+                                    <span class="job-result__company">Compañía XYZ</span> |
+                                    <span class="job-result__location">Remoto</span>
+                                </p>
+                            </header>
+
+                            <section class="job-result__description">
+                                <p>
+                                    Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos
+                                    en
+                                    JavaScript, React, Node.js. El candidato ideal debe ser capaz de trabajar en equipo
+                                    y
+                                    tener
+                                    buenas habilidades de comunicación.
+                                </p>
+                            </section>
+                        </div>
+
+                        <div class="job-result__action">
+                            <button type="button" class="job-result__apply-button">Aplicar</button>
+                        </div>
+                    </article>
+
+                    <article class="job-result">
+                        <div class="job-result__content">
+                            <header class="job-result__header">
+                                <h2 class="job-result__title">Ingeniero de software</h2>
+                                <p class="job-result__meta">
+                                    <span class="job-result__company">Compañía XYZ</span> |
+                                    <span class="job-result__location">Remoto</span>
+                                </p>
+                            </header>
+
+                            <section class="job-result__description">
+                                <p>
+                                    Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos
+                                    en
+                                    JavaScript, React, Node.js. El candidato ideal debe ser capaz de trabajar en equipo
+                                    y
+                                    tener
+                                    buenas habilidades de comunicación.
+                                </p>
+                            </section>
+                        </div>
+
+                        <div class="job-result__action">
+                            <button type="button" class="job-result__apply-button">Aplicar</button>
+                        </div>
+                    </article>
+
+                    <article class="job-result">
+                        <div class="job-result__content">
+                            <header class="job-result__header">
+                                <h2 class="job-result__title">Ingeniero de software</h2>
+                                <p class="job-result__meta">
+                                    <span class="job-result__company">Compañía XYZ</span> |
+                                    <span class="job-result__location">Remoto</span>
+                                </p>
+                            </header>
+
+                            <section class="job-result__description">
+                                <p>
+                                    Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos
+                                    en
+                                    JavaScript, React, Node.js. El candidato ideal debe ser capaz de trabajar en equipo
+                                    y
+                                    tener
+                                    buenas habilidades de comunicación.
+                                </p>
+                            </section>
+                        </div>
+
+                        <div class="job-result__action">
+                            <button type="button" class="job-result__apply-button">Aplicar</button>
+                        </div>
+                    </article>
+
+                    <article class="job-result">
+                        <div class="job-result__content">
+                            <header class="job-result__header">
+                                <h2 class="job-result__title">Ingeniero de software</h2>
+                                <p class="job-result__meta">
+                                    <span class="job-result__company">Compañía XYZ</span> |
+                                    <span class="job-result__location">Remoto</span>
+                                </p>
+                            </header>
+
+                            <section class="job-result__description">
+                                <p>
+                                    Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos
+                                    en
+                                    JavaScript, React, Node.js. El candidato ideal debe ser capaz de trabajar en equipo
+                                    y
+                                    tener
+                                    buenas habilidades de comunicación.
+                                </p>
+                            </section>
+                        </div>
+
+                        <div class="job-result__action">
+                            <button type="button" class="job-result__apply-button">Aplicar</button>
+                        </div>
+                    </article>
+
+
+                </section>
+
+            </footer>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <nav class="pagination" aria-label="Paginación de resultados">
+            <ul class="pagination__list">
+                <li>
+                    <button class="pagination__button" aria-label="Página anterior">«</button>
+                </li>
+                <li><button class="pagination__button">1</button></li>
+                <li><button class="pagination__button">2</button></li>
+                <li><button class="pagination__button">3</button></li>
+                <li><button class="pagination__button">4</button></li>
+                <li><button class="pagination__button">5</button></li>
+                <li>
+                    <button class="pagination__button" aria-label="Página siguiente">»</button>
+                </li>
+            </ul>
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>

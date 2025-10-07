@@ -1,0 +1,218 @@
+img {
+}
+main > section:nth-child(1) {
+  height: auto;
+}
+main > section:nth-child(2) header {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+header {
+  border-bottom: 0px;
+  align-items: start;
+}
+footer {
+  border-top: 0px;
+}
+main > section:nth-child(2) footer {
+  display: block;
+}
+
+/* Filtros de busqueda */
+
+/* Botones de filtro (estilo similar a "Buscar") */
+.filter-dropdown summary {
+  background-color: #334155; /* tono azulado oscuro para contrastar */
+  color: white;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  list-style: none; /* elimina el triángulo */
+}
+
+.filter-dropdown summary:hover {
+  background-color: #475569; /* tono más claro al pasar el cursor */
+}
+
+/* Agrupación de filtros */
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  border: none;
+  margin: 1rem 0 0 0;
+}
+
+/* Dropdown principal */
+.filter-dropdown {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  font-size: 0.9rem;
+  color: white;
+}
+
+/* Botón del dropdown */
+
+/* Agrega ícono visual de flecha ▼ */
+.filter-dropdown summary::after {
+  content: " ▼";
+  font-size: 0.75rem;
+  color: #94a3b8;
+  padding-left: 0.5rem;
+}
+
+/* Contenido desplegado */
+.filter-options {
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+  list-style: none;
+  background-color: #475569;
+  border-top: 1px solid #64748b;
+}
+
+.filter-options li {
+  margin-bottom: 0.25rem;
+}
+
+.filter-options label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: white;
+}
+
+/* Estilo del input checkbox */
+.filter-options input[type="checkbox"] {
+  accent-color: #007bff;
+}
+
+/* Accesibilidad: oculta legend pero disponible para lectores */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Cards de resultados */
+.job-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 0px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: var(--background);
+}
+
+.job-result:first-child {
+  border-radius: 8px 8px 0px 0px;
+}
+.job-result:last-child {
+  border-radius: 0px 0px 8px 8px;
+}
+
+.job-result + .job-result {
+  border-top: 0px;
+}
+
+.job-result__content {
+  flex: 1;
+}
+
+.job-result__header {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0;
+  align-items: start;
+  border-bottom: 0px;
+  padding: 0;
+}
+
+.job-result__title {
+  font-size: 0.995rem !important;
+  margin: 0px !important;
+}
+
+.job-result__meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.job-result__description p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  text-align: left;
+}
+
+.job-result__action {
+  flex-shrink: 0;
+}
+
+.job-result__apply-button {
+  min-width: 120px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.job-result__apply-button:hover {
+  background-color: #0056b3;
+}
+
+/* Paginacion */
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.pagination__list {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination__button {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--background);
+  border: 0px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  min-width: 36px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.pagination__button:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
